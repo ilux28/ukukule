@@ -12,11 +12,16 @@
             <button type="submit">Добавить</button>
         </form>
     </div>
+    <form method="post" action="filter">
+        <input type="text" name="filter">
+        <button type="submit">Найти</button>
+    </form>
     <div>Список сообщений</div>
     {{#messages}}
     <div>
         <b>{{id}}</b>
         <span>{{text}}</span>
+        <span>{{tag}}</span>
     </div>
     {{/messages}}
 </body>
